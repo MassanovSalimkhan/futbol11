@@ -1,0 +1,75 @@
+/* Общие стили для страницы */
+body, html {
+  height: 100%; /* Устанавливаем высоту 100% для всего документа */
+  margin: 0; /* Убираем отступы по умолчанию */
+  font-family: Arial, sans-serif; /* Шрифт по умолчанию */
+  background-color: #f4f4f4; /* Цвет фона страницы */
+}
+
+/* Контейнер, который оборачивает все элементы */
+.App {
+  display: flex;
+  flex-direction: column; /* Расставляем элементы по вертикали */
+  min-height: 100%; /* Занимаем всю высоту страницы */
+  justify-content: space-between; /* Футер закрепляется внизу */
+}
+
+/* Стилизация заголовка */
+header {
+  background-color: #1a1a1a; /* Темный фон */
+  color: white; /* Белый текст */
+  text-align: center; /* Выравнивание по центру */
+  padding: 20px 0; /* Отступы сверху и снизу */
+}
+
+header h1 {
+  font-size: 36px; /* Размер шрифта для заголовка */
+  margin-bottom: 5px; /* Отступ снизу */
+}
+
+header p {
+  font-size: 16px; /* Размер шрифта для подзаголовка */
+  color: #f4f4f4; /* Светлый цвет текста */
+}
+
+/* Стили для основной секции */
+.main-content {
+  padding: 20px;
+  flex-grow: 1; /* Основной контент растягивается на доступное пространство */
+}
+
+button {
+  width: 100%; /* Кнопки растягиваются на всю ширину */
+  padding: 15px;
+  font-size: 18px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px; /* Скругляем углы кнопок */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Плавный переход фона при наведении */
+}
+
+button:hover {
+  background-color: #0073e6; /* Цвет кнопки при наведении */
+  color: white; /* Белый текст при наведении */
+}
+
+/* Стили футера */
+footer {
+  background-color: #1a1a1a; /* Темный фон */
+  color: white; /* Белый текст */
+  text-align: center; /* Выравнивание по центру */
+  padding: 20px 0; /* Отступы сверху и снизу */
+  margin-top: auto; /* Футер всегда прижимается к низу */
+}
+
+footer p {
+  font-size: 14px; /* Размер текста в футере */
+  margin: 0; /* Убираем отступы */
+}
+
+footer small {
+  display: block;
+  font-size: 12px; /* Маленький шрифт для текста копирайта */
+  margin-top: 5px;
+}
