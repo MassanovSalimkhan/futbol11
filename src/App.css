@@ -2,6 +2,7 @@
 body, html {
   height: 100%; /* Устанавливаем высоту 100% для всего документа */
   margin: 0; /* Убираем отступы по умолчанию */
+  padding: 0%;
   font-family: Arial, sans-serif; /* Шрифт по умолчанию */
   background-color: #f4f4f4; /* Цвет фона страницы */
 }
@@ -10,8 +11,7 @@ body, html {
 .App {
   display: flex;
   flex-direction: column; /* Расставляем элементы по вертикали */
-  min-height: 100%; /* Занимаем всю высоту страницы */
-  justify-content: space-between; /* Футер закрепляется внизу */
+  min-height: 100vh; /* Занимаем всю высоту страницы */
 }
 
 /* Стилизация заголовка */
@@ -35,7 +35,7 @@ header p {
 /* Стили для основной секции */
 .main-content {
   padding: 20px;
-  flex-grow: 1; /* Основной контент растягивается на доступное пространство */
+  flex-grow: 1; 
 }
 
 button {
@@ -50,7 +50,7 @@ button {
 }
 
 button:hover {
-  background-color: #0073e6; /* Цвет кнопки при наведении */
+  background-color: #020080; /* Цвет кнопки при наведении */
   color: white; /* Белый текст при наведении */
 }
 
@@ -59,12 +59,13 @@ footer {
   background-color: #1a1a1a; /* Темный фон */
   color: white; /* Белый текст */
   text-align: center; /* Выравнивание по центру */
-  padding: 20px 0; /* Отступы сверху и снизу */
-  margin-top: auto; /* Футер всегда прижимается к низу */
+  padding: 10px 0; /* Отступы сверху и снизу */
+  margin-top: 391px; /* Футер всегда прижимается к низу */
+  flex-grow: 1;
 }
 
 footer p {
-  font-size: 14px; /* Размер текста в футере */
+  font-size: 15px; /* Размер текста в футере */
   margin: 0; /* Убираем отступы */
 }
 
