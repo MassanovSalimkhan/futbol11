@@ -1,0 +1,283 @@
+/* Основные стили для всего приложения */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+.logo-icon {
+  width: 24px; /* Размер иконки */
+  height: 24px;
+  margin-right: 8px; /* Отступ между иконкой и текстом */
+}
+
+.App {
+  text-align: center;
+  background-color: #ffffff;
+  min-height: 100vh;
+}
+
+/* Навбар */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Логотип слева, меню в центре, кнопки справа */
+  align-items: center;
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #0c0052, #00085f); /* Градиентный фон */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Тень */
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Логотип */
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.icon-button svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor; /* Унаследовать цвет */
+}
+
+
+.navbar .logo-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+/* Центрирование меню */
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex: 1; 
+  justify-content: center;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 10px 15px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+.nav-links button:hover {
+  background-color: #ffffff25; /* Легкое выделение */
+}
+
+/* Блок кнопок регистрации и логина */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #00085f, #4b0082);
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* Карточка */
+.auth-card {
+  background: #fff;
+  color: #000;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Поля ввода */
+.auth-input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.auth-input:focus {
+  outline: none;
+  border-color: #00085f;
+  box-shadow: 0 0 5px rgba(0, 8, 95, 0.5);
+}
+
+/* Кнопки (используем navbar стиль) */
+.nav-btn {
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(135deg, #00085f, #4b0082);
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+  background: linear-gradient(135deg, #4b0082, #00085f);
+  box-shadow: 0 4px 10px rgba(0, 8, 95, 0.5);
+}
+
+/* Ссылка в футере */
+.auth-footer {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.auth-footer a {
+  color: #00085f;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.auth-footer a:hover {
+  color: #4b0082;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  display: flex; /* Центрирование содержимого */
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-links a:hover,
+.nav-links button:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Подсветка */
+}
+
+.teams-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 10px 15px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.teams-button:hover {
+  background-color: #ffffff25; /* Легкое выделение */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+.nav-links a:hover {
+  background-color: rgba(227, 227, 227, 0.2);
+}
+
+.nav-links a.active {
+  background-color: #00ff08; /* Цвет активной страницы */
+  color: white;
+}
+
+.search-bar {
+  width: 200px; /* Ширина строки */
+  padding: 5px 2px; /* Внутренний отступ */
+  font-size: 14px; /* Размер шрифта */
+  border: 2px solid #00064a; /* Граница */
+  border-radius: 30px; /* Скругленные углы */
+  outline: none; /* Убираем обводку при фокусе */
+  transition: all 0.3s ease-in-out; /* Плавный переход при наведении */
+}
+
+/* Стили при наведении */
+.search-bar:hover {
+  border-color: #ffffff; /* Изменение цвета границы */
+  background-color: #f8f8f8; /* Лёгкий светлый фон */
+}
+
+/* Стили при фокусе */
+.search-bar:focus {
+  border-color: #030066; 
+  background-color: #ffffff; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.33); 
+}
+
+/* Упрощение для мобильных устройств */
+@media (max-width: 768px) {
+  .search-bar {
+    width: 100%; 
+  }
+}
+
+/* Для мобильных устройств */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-links li {
+    margin: 5px 0;
+  }
+
+  .auth-buttons {
+    margin-top: 10px;
+  }
+}
+
+/* Основной контент */
+.main-content {
+  margin-top: 75px; /* Отступ, чтобы контент не перекрывался navbar */
+  padding: 20px;
+}
+
+/* Футер */
+footer {
+  margin-top: 450px;
+  background: linear-gradient(90deg, #00085f, #0e0060);
+  color: white;
+  padding: 5px 0;
+  font-size: 15px;
+}

@@ -1,0 +1,45 @@
+.teams {
+  position: relative;
+}
+
+.teams-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 10px 15px;
+  transition: background 0.3s ease;
+  border-radius: 5px;
+}
+
+.teams-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%; /* Центрирование меню */
+  transform: translateX(-50%);
+  background-color: #00025d;
+  border: 1px solid rgba(0, 13, 255, 0.3);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 200px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1000;
+  border-radius: 5px;
+}
+
+.dropdown-menu li {
+  padding: 10px 16px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.dropdown-menu li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
