@@ -90,45 +90,33 @@ body, html {
   background-color: #ffffff25; /* Легкое выделение */
 }
 
-/* Блок кнопок регистрации и логина */
-.auth-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: linear-gradient(135deg, #00085f, #4b0082);
-  color: white;
-  font-family: Arial, sans-serif;
-  padding: 20px;
+/* Стили для кнопок Login и SignUp */
+.login-btn, .register-btn {
+  background: transparent; /* Прозрачный фон */
+  border: 2px solid #00085f; /* Белая граница */
+  color: white; /* Белый текст */
+  padding: 8px 15px; /* Внутренний отступ */
+  margin-left: 10px; /* Отступ между кнопками */
+  border-radius: 20px; /* Скругленные углы */
+  text-decoration: none; /* Убираем подчеркивание */
+  font-size: 14px; /* Размер шрифта */
+  font-weight: bold;
+  transition: all 0.3s ease-in-out; /* Плавный переход */
 }
 
-/* Карточка */
-.auth-card {
-  background: #fff;
-  color: #000;
-  padding: 30px 40px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  width: 100%;
-  max-width: 400px;
+.login-btn:hover, .register-btn:hover {
+  background: #ffffff30; 
+  color: #ffffff; 
 }
 
-/* Поля ввода */
-.auth-input {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 2px solid #ddd;
-  border-radius: 5px;
-  font-size: 1rem;
-  transition: all 0.3s ease;
+.register-btn {
+  background: #00085f; 
+  color: #ffffff; 
 }
 
-.auth-input:focus {
-  outline: none;
-  border-color: #00085f;
-  box-shadow: 0 0 5px rgba(0, 8, 95, 0.5);
+.register-btn:hover {
+  background: #ffffff30; /* Темный фон */
+  color: white; /* Белый текст при наведении */
 }
 
 /* Кнопки (используем navbar стиль) */
@@ -223,8 +211,9 @@ body, html {
 }
 
 .search-bar {
-  width: 200px; /* Ширина строки */
-  padding: 5px 2px; /* Внутренний отступ */
+  color: white;
+  width: 200px; 
+  padding: 5px 2px; 
   font-size: 14px; /* Размер шрифта */
   border: 2px solid #00064a; /* Граница */
   border-radius: 30px; /* Скругленные углы */
@@ -232,17 +221,17 @@ body, html {
   transition: all 0.3s ease-in-out; /* Плавный переход при наведении */
 }
 
+
 /* Стили при наведении */
 .search-bar:hover {
   border-color: #ffffff; /* Изменение цвета границы */
-  background-color: #f8f8f8; /* Лёгкий светлый фон */
+  background-color: #f8f8f80e; /* Лёгкий светлый фон */
 }
 
 /* Стили при фокусе */
 .search-bar:focus {
   border-color: #030066; 
-  background-color: #ffffff; 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.33); 
+  background-color: #ffffff1e;  
 }
 
 /* Упрощение для мобильных устройств */

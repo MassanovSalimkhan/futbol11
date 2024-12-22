@@ -42,11 +42,12 @@ function App() {
           </ul>
 
           {/* Search Bar и кнопки авторизации */}
+          
           <div className="auth-and-search">
             <input
               type="text"
               className="search-bar"
-              placeholder="Search..."
+              placeholder="Search"
             />
             <Link to="/sign-in" className="login-btn">Login</Link>
             <Link to="/sign-up" className="register-btn">SignUp</Link>
@@ -56,7 +57,7 @@ function App() {
         {/* Контент страниц */}
         <main className="main-content">
           <Routes>
-            <Route path="/home" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/matches" element={<Matches />} />
             <Route path="/personalization" element={<Personalization />} />
             <Route path="/about" element={<About />} />
